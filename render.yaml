@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: cordis-discord-total
+    runtime: node
+    plan: free
+    region: oregon
+    branch: main
+    autoDeploy: true
+    buildCommand: npm install --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /api/db-status
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 20.20.2
+      # Cole aqui a URL do PostgreSQL gratuito (Neon.tech / Supabase).
+      # Se deixar em branco, o app usa SQLite local (data/cordis.sqlite).
+      - key: DATABASE_URL
+        sync: false

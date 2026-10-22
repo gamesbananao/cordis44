@@ -1,0 +1,24 @@
+{
+  "name": "cordis-discord-clone",
+  "version": "1.0.0",
+  "description": "Cordis — Discord Total com insígnias, Cordis Aurora (Nitro), painel de administrador e banco SQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "online": "node online.js",
+    "test": "node tests/test-protocol.js",
+    "test:admin": "node tests/test-admin.js",
+    "test:ui": "node tests/test-ui.js",
+    "build:pages": "node scripts/build-static.js"
+  },
+  "dependencies": {
+    "localtunnel": "^2.0.2",
+    "pg": "^8.20.0",
+    "sql.js": "^1.14.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@playwright/browser-chromium": "^1.58.2",
+    "playwright-core": "^1.58.2"
+  }
+}

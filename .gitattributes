@@ -1,0 +1,25 @@
+# Normaliza finais de linha (evita diffs gigantes entre Windows/Mac/Linux)
+* text=auto eol=lf
+
+# Código
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.css  text eol=lf
+*.html text eol=lf
+
+# Atalhos do Windows mantêm CRLF
+*.bat  text eol=crlf
+
+# Binários
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.ico  binary
+*.sqlite binary
+
+# Linguagem do repositório
+public/* linguist-documentation=false
+shots/*  linguist-documentation=true

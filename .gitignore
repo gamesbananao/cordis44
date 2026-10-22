@@ -1,0 +1,50 @@
+# ---------- Dependências ----------
+node_modules/
+jspm_packages/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+
+# ---------- Banco de dados local (criado automaticamente) ----------
+data/
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# ---------- Segredos / configuração local ----------
+.env
+.env.local
+.env.*.local
+*.pem
+
+# ---------- Logs ----------
+logs/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# ---------- Sistema operacional ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Editores ----------
+*.swp
+*.swo
+.idea/
+*.code-workspace
+
+# ---------- Testes / cobertura ----------
+coverage/
+.nyc_output/
+
+# ---------- Temporários ----------
+tmp/
+temp/
+*.bak
+*.orig
+
+# Build estático do Vercel (gerado automaticamente)
+dist/
+.vercel
